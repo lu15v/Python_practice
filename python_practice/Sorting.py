@@ -12,8 +12,9 @@ def bubblesort(list):
                 list[i] = list[i + 1]
                 list[i + 1] = temp
 
-with open('words.csv') as i:
+with open('words.csv', "r+") as i:
     reader = csv.reader(i, delimiter=',')
     iList = list(reader)[0]
     bubblesort(iList)
-    print(iList)
+    wr = csv.writer(i, dialect ='excel')
+    wr.writerow(iList)
