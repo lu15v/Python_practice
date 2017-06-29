@@ -1,3 +1,6 @@
+#A little program that reads a csv file and then orders the rows in ascending order
+#Using the algorithm of bubblesort.
+
 import csv
 
 
