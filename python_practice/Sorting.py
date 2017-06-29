@@ -9,7 +9,8 @@ def bubblesort(list):
                 list[i] = list[i + 1]
                 list[i + 1] = temp
 
-file = open('words.csv', 'r')
-reader = csv.reader(file)
-for word in reader:
-    print(word)
+with open('words.csv') as i:
+    reader = csv.reader(i, delimiter=',')
+    iList = list(reader)[0]
+    bubblesort(iList)
+    print(iList)
