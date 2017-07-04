@@ -1,4 +1,6 @@
 #A little game of Rock Paper Scisors.
+
+
 valid_i = {1: "ROCK", 2: "PAPER", 3: "SCISSORS"}
 
 def validation(player):
@@ -36,14 +38,3 @@ p1_choice = validation("1")
 p2_choice = validation("2")
 
 winner(p1_choice, p2_choice)
-
-# rock > SCISSORS
-# paper > Rock
-# scissors > Paper 3 11 19
-#
-# 1 > 3
-# 2 > 1
-# 3 > 2
-
--2, 1, 1
-2, -1, -1
